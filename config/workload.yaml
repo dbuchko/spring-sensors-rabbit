@@ -15,5 +15,5 @@ spec:
       ref:
         apiVersion: rabbitmq.com/v1beta1
         kind: RabbitmqCluster
-        name: rmq-1
+        name: example-rabbitmq-cluster-1
 
