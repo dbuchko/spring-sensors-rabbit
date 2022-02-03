@@ -55,13 +55,13 @@ spec:
         terminationMessagePolicy: FallbackToLogsOnError
         volumeMounts:
         - mountPath: /bindings/rmq
-          name: binding-rmq-1
+          name: binding-example-rabbitmq-cluster-1
           readOnly: true
       terminationGracePeriodSeconds: 300
       volumes:
-      - name: binding-rmq-1
+      - name: binding-example-rabbitmq-cluster-1
         projected:
           defaultMode: 420
           sources:
           - secret:
-              name: rmq-1-default-user
+              name: example-rabbitmq-cluster-1-default-user
